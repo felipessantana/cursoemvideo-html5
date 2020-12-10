@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+    color:black;
+}
+p {
+    text-align: justify; 
+    text-indent: 50px;
+}
+span {
+    font-weight: 900;
+}
+/*Formatação de imagens com legenda */
+/* contener pai*/
+figure.foto-legenda{
+    position: relative;
+    /*Bordar*/
+    border: 8px solid white;
+    /* Criando uma sobra*/
+    box-shadow:1px 1px 4px black ;
+}
+/* configuração para que a imagem se ajuste a borda*/
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+/* contener filho*/
+figure.foto-legenda figcaption {
+    /*Adicionando opacidade na imagem*/
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    /*Criando uma transparencia*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*Mudando a cor da legenda*/
+    color: white;
+    /*Colocando a transparencia na imagem toda*/
+    width: 100%;
+    height: 100%;
+    /*Criando um espaço dentro da legenda*/
+    padding: 10px;
+    /*criando um box dentro da borda*/
+    box-sizing: border-box;
+    /*Criando uma transição de 1 segundo*/
+    transition: opacity 1s;
+}
+/*Criado para que ao passar o mouse a legenda apareca*/
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
