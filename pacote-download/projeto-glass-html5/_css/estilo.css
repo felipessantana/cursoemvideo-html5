@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*Importanto uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body{
     background-color: #dddddd;
@@ -20,10 +26,33 @@ p {
 header#cabecalho img#icone{
     position: absolute;
     left: 960px;
-    top: 40px;
+    top: 70px;
 }
-header#cabecalho{
-    
+header#cabecalho {
+    /*criando uma linha abaixo do cabecalho */
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    /*Configurando a logo marca */
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+}
+header#cabecalho h1{
+    /*tipo da fonte*/
+    font-family: 'FonteLogo',  sans-serif;
+    /*tamanho da fonte*/
+    font-size: 30pt;
+    color: #606060;
+    /*sombreamento*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom:0px ;
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 span {
     font-weight: 900;
@@ -78,7 +107,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 400px;
+    left: 500px;
 }
 nav#menu li{
     /*Adicionar o botões de menu em uma unica linha*/
