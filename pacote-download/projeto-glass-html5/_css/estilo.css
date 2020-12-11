@@ -1,12 +1,29 @@
 @charset "UTF-8";
 
 body{
-    background-color: white;
+    background-color: #dddddd;
     color:black;
+}
+div#interface {
+    /*Delimitando a div*/
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    /*sombreamento*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 p {
     text-align: justify; 
     text-indent: 50px;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 960px;
+    top: 40px;
+}
+header#cabecalho{
+    
 }
 span {
     font-weight: 900;
@@ -49,4 +66,44 @@ figure.foto-legenda figcaption {
 /*Criado para que ao passar o mouse a legenda apareca*/
 figure.foto-legenda:hover figcaption{
     opacity: 1;
+}
+/*Formatação do Menu*/
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    /*Retirando os indicadores da lista*/
+    list-style: none;
+    /*colocando as letras em maiusculas*/
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+}
+nav#menu li{
+    /*Adicionar o botões de menu em uma unica linha*/
+    display: inline-block;
+    background-color: #dddddd;
+    /*margin interna*/
+    padding: 10px;
+    margin: 2px;
+    /*configuração do tempo de transição a passar o mouse*/
+    transition: background-color 1s;
+
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+nav#menu h1{
+    /*escondendo o conteudo da tag h1*/
+    display: none;
+}
+nav#menu a {
+    color: black;
+    /*Tirando o sublinhado do texto*/
+    text-decoration: none;
+}
+nav#menu a:hover{
+        /*ao passar o mouse o link muda de cor para branco*/
+        color: #ffffff;
 }
