@@ -3,17 +3,18 @@
 section#conteudo {
     width: 1000px;
     margin: auto;
+    overflow: hidden;
 }
 /*configurando o iframe para que o conteudo fico alinhando a imagem do oculos*/
 iframe#frame-spec {
-    width: 380px;
-    height:280px;
-    border:none;
+    width: 400px;
+    height: 280px;
+    border: none;
     overflow: hidden;
+
 }
 
-iframe#frame-spec: :-webkit-scrollbar {
+iframe#frame-spec::-webkit-scrollbar {
     display: none;
-    overflow:hidden;
     
 }
