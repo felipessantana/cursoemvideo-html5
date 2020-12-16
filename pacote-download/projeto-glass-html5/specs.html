@@ -10,6 +10,7 @@
 <!--Carregando um arquivo javascript-->
 <script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
+    
 <div id="interface">
     <header id="cabecalho">
 <!--hgroup criando um grupo de h-->
@@ -48,8 +49,11 @@
         </p>
 
             <section id="conteudo">
-                <img src="_imagens/glass-esquema-marcado.jpg"/>
-                <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+                <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+                <map name="meumapa">
+                    <area shape="rect" coords=""/>
+                </map>
+                <iframe scrolling="no" src="google-glass.html" name="janela" id="frame-spec"></iframe>
             </section>
 
         </article>
